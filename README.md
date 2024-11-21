@@ -76,11 +76,15 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > The value of the variable is the number of people we need to be drovers inside an array. It has specifics about that person like id, first name, last name, and gender. 
+
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > The value of drover will change each time it iterates over the loop, so the value of drover will end up being every person inside of the drovers array.
+   > The value of drovers is an array with a specific number of drovers inside that we got back from running this function `const drovers = hireDrovers(cattleToDrive)` 
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > https://www.loom.com/share/278b4d79e429462cab5ab4e0273d5d86 
+
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +92,16 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > This code is very similar to a for each loop. We are iterating over `areas.forests` and as long as the variable `forestNumber` is less than `areas.forests` then we will keep iterating through. After it iterates through each time, it updates the `forestNumber` value by adding 1. The `forestNumber++` is how it adds to it each time. 
+   > For every iteration through, we are adding the word `forest` to our variable `journey` with `journey.push("forest")`
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The value of `database` is 2 arrays. We have the `cattleTypes` and `drovers` array inside of that one variable so when we export it, we have all that information inside of just one variable.
+
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > `herdSize` is the parameter that is being passed to the function. It's value is a number and in this case, the number is 50. We are defining that with these 2 lines in `main.js`
+   >`const cattleToDrive = 50`
+   >`const drovers = hireDrovers(cattleToDrive)` so it gets it's value from `cattleToDrive`.
 
 ## When You Are Done
 
